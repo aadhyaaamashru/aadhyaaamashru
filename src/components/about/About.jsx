@@ -12,7 +12,6 @@ const About = () => {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__content">
-          
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
@@ -25,8 +24,8 @@ const About = () => {
               <FiUsers className="about__icon" />
               <h5>Education</h5>
               <small>
-                B.Sc. Mechanical Engineering, M.Sc. Innovation &
-                Entrepreneurship
+                Computer Science <br />
+                University of Waterloo
               </small>
             </article>
             <article className="about__card">
@@ -42,28 +41,45 @@ const About = () => {
 
           <div className="about-content-para">
             <p>
-              I'm a problem solver with a background in Engineering, Product
-              Design, & Entrepreneurship. Alongside my studies, I started
-              Streets of Oslo AS, a company which sold backpacks through social
-              media. Later I worked as a Consultant in TietoEvry within Product
-              Development and Pre-Sales of RPA technology. In recent years, I've
-              worked in the Coaching Industry with Sales Automation, Website, &
-              Advertisement Management. I thrive in a role where I can use my
-              broad knowledge to break down complex problems and where the tasks
-              require interaction between Design & Functionality. After a career
-              focused on the business side of IT, I've immersed myself in the
-              technical side, and become a fullstack developer through Academic
-              Work's 12-week intensive training in JavaScript.
+              I'm currently a second-year Computer Science student at the
+              University of Waterloo, deeply passionate about various facets of
+              the field, including Web Development, Software Development,
+              Artificial Intelligence, Web scraping, and Android Development. 
+              
+              <br />
+              <br />
+              I
+              thrive on challenges and actively participate in hackathons,
+              viewing them as invaluable opportunities for learning and growth.
+              These events drive me to explore new languages and software,
+              enabling me to create meaningful projects. 
+              
+              <br />
+              <br />
+              
+              Beyond coding, I have a
+              keen interest in Biology, particularly zoology, and often find
+              myself immersed in zoology books during my free time. 
+              
+              <br />
+              <br />
+              
+              As I
+              progress in my studies, I'm actively seeking a co-op opportunity
+              for the summer of 2024. 
+              
+              <br />
+              <br />
+              Feel free to connect with me anytime!
             </p>
           </div>
 
-
+          {/* 
           <div className="about-content-btn">
             <a href="#contact" className="btn btn-primary">
               Let's Talk
             </a>
-          </div>
-
+          </div> */}
         </div>
       </div>
     </section>
