@@ -1,67 +1,128 @@
 .experience__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
-.experience__container > div {
+.experience__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
   background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
-  border-radius: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
 
-.experience__container > div:hover {
+.experience__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
 }
 
-.experience__container > div > h3 {
+.experience__logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-top: 5px;
+}
+
+.experience__card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-white);
+}
+
+.experience__card small {
+  display: block;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.experience__card p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--color-light);
+}
+
+#experience h5 {
+  text-align: center;
+  color: var(--color-light);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#experience h2 {
   text-align: center;
   margin-bottom: 2rem;
   color: var(--color-primary);
 }
 
-.experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+/* === LADDER STYLE === */
+.ladder {
+  position: relative;
+  margin-top: 1.2rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--color-primary);
 }
 
-.experience__details {
-  display: flex;
-  gap: 1rem;
+.ladder__step {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-.experience__details-icon {
-  margin-top: 6px;
-  color: var(--color-primary);
+.ladder__step::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 0.55rem;
+  width: 1rem;
+  height: 2px;
+  background-color: var(--color-primary);
 }
 
-/* MEDIA QUERIES (MEDIUM DEVICES) */
+.ladder__title {
+  font-size: 0.95rem;            /* Match blueprint style */
+  font-weight: 500;              /* Slightly lighter */
+  color: var(--color-white);
+  margin-bottom: 0.2rem;
+}
+
+.ladder__duration {
+  font-size: 0.82rem;            /* Match blueprint duration */
+  color: var(--color-light);
+}
+
+
+
+/* === RESPONSIVE STYLES === */
 @media screen and (max-width: 1024px) {
   .experience__container {
-    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
-  .experience__container > div {
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
-  }
-  .experience__content {
-    padding: 1rem;
+
+  .experience__card {
+    flex-direction: row;
+    padding: 1.2rem;
   }
 }
 
-/* MEDIA QUERIES (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
-  .experience__container {
-    gap: 1rem;
+  .experience__card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
-  .experience__container > div {
-    width: 100%;
-    padding: 1rem 1rem;
+
+  .experience__logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .ladder {
+    padding-left: 1.5rem;
   }
 }

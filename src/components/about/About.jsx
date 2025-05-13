@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import profile_picture from "../../assets/profile3.png";
-import { FaAward } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
@@ -14,72 +14,43 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>
-                6 Months + <br /> Developer Experience
-              </small>
-            </article>
-            <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Education</h5>
               <small>
-                Computer Science <br />
-                University of Waterloo
+                University of Waterloo<br />
+                Expected Grad: Apr 2027
               </small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
+              <h5>Currently Building</h5>
               <small>
-                3+ Completed
-                <br />
-                and Counting
+                Mudra<br />
+                RateMyStreets 
+              </small>
+            </article>
+            <article className="about__card">
+              <FaLaptopCode className="about__icon" />
+              <h5>What I’m Looking For</h5>
+              <small>
+                Seeking a Winter 2026 Internship<br />
+
               </small>
             </article>
           </div>
 
           <div className="about-content-para">
-            <p>
-              I'm currently a second-year Computer Science student at the
-              University of Waterloo, deeply passionate about various facets of
-              the field, including Web Development, Software Development,
-              Artificial Intelligence, Web scraping, and Android Development. 
-              
-              <br />
-              <br />
-              I
-              thrive on challenges and actively participate in hackathons,
-              viewing them as invaluable opportunities for learning and growth.
-              These events drive me to explore new languages and software,
-              enabling me to create meaningful projects. 
-              
-              <br />
-              <br />
-              
-              Beyond coding, I have a
-              keen interest in Biology, particularly zoology, and often find
-              myself immersed in zoology books during my free time. 
-              
-              <br />
-              <br />
-              
-              As I
-              progress in my studies, I'm actively seeking a co-op opportunity
-              for the summer of 2024. 
-              
-              <br />
-              <br />
-              Feel free to connect with me anytime!
-            </p>
-          </div>
+          <p>
+  I'm a second-year Computer Science student at the University of Waterloo who gets better the harder things get. Whether it's building for users I’ve never met or working with tools I’ve never used, I lean into the unknown with curiosity and confidence.
+  <br /><br />
+  Hackathons and fast-paced team projects have taught me to move quickly, ask the right questions, and stay grounded even when the outcome isn’t clear. I don’t wait for clarity to act — I build clarity by acting.
+  <br /><br />
+  Outside of tech, I’m fascinated by biology and animal behavior — it’s where my curiosity began, and it still shapes how I think and solve problems today.
+  <br /><br />
+  I’m currently looking for a Winter 2025 internship where I can learn, build, and contribute with a team that values impact over titles.
+</p>
 
-          {/* 
-          <div className="about-content-btn">
-            <a href="#contact" className="btn btn-primary">
-              Let's Talk
-            </a>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
